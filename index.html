@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioMetrics Analytics | Precision Bioanalyzer Services</title>
+    
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f8fafc; /* Very light lab grey/blue */
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #ffffff;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0056b3; /* Scientific Blue */
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #0056b3;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0056b3 0%, #0096FF 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            opacity: 0.9;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            color: #0056b3;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Section Containers */
+        .section-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+
+        /* Tech/Features Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #0056b3;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #0056b3;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        /* Specs Section */
+        .specs {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            margin-top: 50px;
+        }
+
+        .specs-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .specs-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .specs-text ul {
+            list-style-type: square;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .specs-text li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a252f;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">BioMetrics Lab</a>
+        <div class="nav-links">
+            <a href="#applications">Applications</a>
+            <a href="#technology">Technology</a>
+            <a href="#contact" onclick="requestQuote()">Request Quote</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Next-Generation Sample Quality Control</h1>
+        <p>Precision microfluidics for the automated analysis of DNA, RNA, proteins, and cells. Accelerate your genomic and proteomic workflows with highly reliable sizing and quantification.</p>
+        <button class="btn" onclick="requestQuote()">Analyze Your Samples</button>
+    </header>
+
+    <!-- Applications Section -->
+    <section id="applications" class="section-container">
+        <h2 class="section-title">Analytical Applications</h2>
+        <div class="grid">
+            <!-- DNA Card -->
+            <div class="card">
+                <h3>DNA Analysis</h3>
+                <p>High-resolution sizing and quantification of DNA fragments. Perfect for Next-Generation Sequencing (NGS) library prep, PCR fragment analysis, and restriction digests.</p>
+            </div>
+            <!-- RNA Card -->
+            <div class="card">
+                <h3>RNA Analysis</h3>
+                <p>Objective evaluation of RNA quality using the industry-standard RNA Integrity Number (RIN). Ensure the highest quality data for microarrays and RT-qPCR.</p>
+            </div>
+            <!-- Protein Card -->
+            <div class="card">
+                <h3>Protein Analysis</h3>
+                <p>Rapid and sensitive sizing and quantification of proteins. An automated alternative to traditional SDS-PAGE gels with digital, reproducible results.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology / Specs Section -->
+    <section id="technology" class="specs">
+        <div class="specs-content">
+            <div class="specs-text">
+                <h2 style="color: #2c3e50; margin-bottom: 20px;">Powered by Microfluidics</h2>
+                <p>Our bioanalyzer utilizes lab-on-a-chip technology, reducing sample handling and minimizing the risk of contamination. By integrating separation, staining, and detection into a single automated step, we deliver reproducible data in a fraction of the time.</p>
+                <ul>
+                    <li><strong>Minimal Sample Volume:</strong> Requires only 1 µL of sample.</li>
+                    <li><strong>Fast Turnaround:</strong> Analysis complete in 30-40 minutes.</li>
+                    <li><strong>Digital Data:</strong> Easily export electropherograms and gel-like images.</li>
+                    <li><strong>High Sensitivity:</strong> Detect picogram concentrations of nucleic acids.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Ready to optimize your workflow?</h2>
+        <p style="margin: 15px 0;">Contact our lab to schedule a bioanalyzer run or to discuss your specific assay requirements.</p>
+        <p>&copy; 2026 BioMetrics Lab. All rights reserved.</p>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        function requestQuote() {
+            // In a real website, this might open a form or redirect to a contact page.
+            let userEmail = prompt("Please enter your lab email address to receive pricing and submission guidelines:");
+            
+            if(userEmail) {
+                alert("Thank you! Our technicians will send details regarding sample submission to " + userEmail + " shortly.");
+            }
+        }
+    </script>
+
+</body>
+</html>
